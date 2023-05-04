@@ -7,6 +7,9 @@
     background:rgb(0, 85, 165);
     border-color:rgb(0, 85, 165);
     color: #fff;
+    word-wrap: none;
+    flex-wrap: nowrap;
+
 }
 
 .btn-default:hover{
@@ -18,6 +21,9 @@
     background: rgb(255, 89, 61,1);
     color: #fff;
     border-color: rgb(255, 89, 61,1);
+    word-wrap: none;
+    flex-wrap: nowrap;
+
 }
 
 .btn-outline-default:hover{
@@ -79,6 +85,7 @@ color:rgb(39, 29, 103);
     font-weight: 500;
     color: #5a6872;
 
+
 }
 
 .btn-large>i{
@@ -105,6 +112,8 @@ color:rgb(39, 29, 103);
     font-size: 1rem;
     font-weight: 500;
     color: #5a6872;
+    word-wrap: none;
+    flex-wrap: nowrap;
 
 }
 
