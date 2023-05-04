@@ -1,0 +1,171 @@
+.bg-blue{
+    background:rgb(0, 85, 165);
+    border-color:rgb(0, 85, 165);
+    color: #fff;
+}
+.btn-default{
+    background:rgb(0, 85, 165);
+    border-color:rgb(0, 85, 165);
+    color: #fff;
+}
+
+.btn-default:hover{
+    background: #fff;
+    border-color:rgb(0, 85, 165);
+    color:rgb(0, 85, 165);
+}
+.btn-outline-default{
+    background: rgb(255, 89, 61,1);
+    color: #fff;
+    border-color: rgb(255, 89, 61,1);
+}
+
+.btn-outline-default:hover{
+    background: #fff;
+    border-color:rgb(0, 85, 165);
+    color:rgb(0, 85, 165);
+
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #f4f5f8!important;
+    overflow-x: hidden;
+}
+
+.dropdown-item:hover{
+    background:rgb(0, 85, 165);
+    color: #fff;
+}
+
+.dropdown-menu:hover{
+    border-color:rgb(0, 85, 165);
+    color:rgb(0, 85, 165);
+    background: #fff;
+}
+
+.nav-link .dropdown-toggle:hover{
+    border-color:rgb(0, 85, 165);
+    color:rgb(0, 85, 165);
+    background: #fff;
+}
+
+.text-default{
+color:rgb(39, 29, 103);
+}
+
+.text-default-bold{
+    color:rgb(39, 29, 103);
+    font-weight: 100;
+    font-family:"Helvetica Neue",Helvetica,Arial,bold,sans-serif;
+    }
+    
+
+.btn-large{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 6.5rem;
+    background: #fff;
+    text-align: center;
+    padding: .5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,.15);
+    -webkit-transition: all ease .333s;
+    -moz-transition: all ease .333s;
+    -o-transition: all ease .333s;
+    -transition: all ease .333s;
+    transition: all ease .333s;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #5a6872;
+
+}
+
+.btn-large>i{
+    color:rgb(0, 85, 165);
+    font-size:2rem;
+
+}
+
+.btn-large-w{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 7rem;
+    background: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,.15);
+    -webkit-transition: all ease .333s;
+    -moz-transition: all ease .333s;
+    -o-transition: all ease .333s;
+    -transition: all ease .333s;
+    transition: all ease .333s;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #5a6872;
+
+}
+
+.btn-large-w>i{
+    color:rgb(0, 85, 165);
+    font-size:2rem;
+
+}
+
+.insurance-img{
+    width:3.5rem; 
+    filter: brightness(100%);
+    padding: 0.2rem;
+    
+  }
+
+  .insurance-a:hover .insurance-img,
+.insurance-a:hover span {
+  color: white;
+  filter: brightness(100%);
+  fill:white;
+}
+
+  
+.btn-large:hover{
+    background: rgb(255, 89, 61,1);
+    color: #fff;
+    border-color: rgb(255, 89, 61,1);
+}
+
+.btn-large-w:hover{
+    background: rgb(255, 89, 61,1);
+    color: #fff;
+    border-color: rgb(255, 89, 61,1);
+}
+.sub-footer-alt li a{
+    display: block;
+    color: #5a6872;
+    text-decoration: none;
+}
+.sub-footer-alt li a:hover{
+    display: block;
+    color: rgb(39, 29, 103);
+    text-decoration: underline;
+}
+.sub-footer-alt ul {
+    list-style: none;
+    color: #5a6872;
+  }
+  .sub-footer-alt li {
+    color:#5a6872;
+  }
+
+  .sub-footer-alt span {
+    font-weight: bold;
+    color:rgb(0, 85, 165);
+  }
+
+  .sub-footer-alt-2 li {
+    color:#5a6872;
+  }
+
+
+  
