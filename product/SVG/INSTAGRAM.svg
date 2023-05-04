@@ -4,7 +4,8 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 125.6 127.7"
 	 style="enable-background:new 0 0 125.6 127.7;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#6D6E71;}
+	.st0{fill:#6D6E71; opacity:0.7; }
+    .st0:hover{fill:#6D6E71; opacity:0.2;}
 </style>
 <path class="st0" d="M62.8,31.7C45,31.7,30.6,46,30.6,63.9S45,96,62.8,96S95,81.7,95,63.9S80.6,31.7,62.8,31.7z M62.8,84.8
 	c-11.5,0-20.9-9.4-20.9-20.9s9.4-20.9,20.9-20.9s20.9,9.4,20.9,20.9S74.3,84.8,62.8,84.8L62.8,84.8z M103.8,30.4
