@@ -147,7 +147,7 @@ color:rgb(39, 29, 103);
 }
 .sub-footer-alt li a:hover{
     display: block;
-    color: rgb(39, 29, 103);
+    color: rgb(255, 89, 61,1);
     text-decoration: underline;
 }
 .sub-footer-alt ul {
