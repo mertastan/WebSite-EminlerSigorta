@@ -296,8 +296,14 @@ line-height: 1.25;
  }
 
  .breadcrumb-item a{
-    color:rgb(39, 29, 103);;
+    color:rgb(39, 29, 103);
      }
  .breadcrumb-item a:hover{
 color:rgb(39, 29, 103);;
  }
+
+ .dropdown-item.disabledes{
+    color: rgb(49, 49, 49);
+    pointer-events: none;
+    background-color:rgb(178, 204, 228);
+}
