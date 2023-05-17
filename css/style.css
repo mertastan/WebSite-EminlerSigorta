@@ -88,6 +88,9 @@ color:rgb(39, 29, 103);
 .text-grey{
     color:#424446;  
 }
+.text-lgrey{
+    color:#636464;  
+}
 .text-small{
 font-size: small;
 }
@@ -113,7 +116,7 @@ font-size: small;
         font-weight: bold;
         font-family:"Helvetica Neue",Helvetica,Arial,bold,sans-serif;
         }
- 
+
 .border-left-purple{
     border-left:1px solid rgb(39, 29, 103);;
 }
