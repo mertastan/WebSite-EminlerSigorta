@@ -61,14 +61,36 @@
         })(window, document, 'script', 'dataLayer', 'GTM-N34DLK');</script><style type="text/css" id="operaUserStyle"></style>
 <!-- End Google Tag Manager -->
 
-    <title>Kaydol | EminlerSigorta</title>
+    <title>KVK Aydinlatma Metni | EminlerSigorta</title>
+
+    <script>
+      var scrolling = false; // Kaydırma işlemi devam ediyor mu?
+    
+      function goToSection(sectionId) {
+        if (!scrolling) {
+          scrolling = true; // Kaydırma işlemi başladı
+          var section = document.getElementById(sectionId);
+          var navbarHeight = document.getElementById('navbar').offsetHeight;
+          var sectionTop = section.offsetTop - navbarHeight;
+          window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+    
+          // Kaydırma işlemi tamamlandığında scrolling değişkenini false olarak ayarlayın
+          setTimeout(function() {
+            scrolling = false;
+          }, 1000); // Uygun bir zaman aşım süresi belirleyebilirsiniz
+        }
+      }
+    </script>
+
+
 
   </head>
   <body>
 
+
 <!-- ------------------------------------------------------------------------------------------------------------------- -->  
 <!-- NAVBAR START -->
-<div class ="bg-white border-bottom fixed-top" style="height:5rem;">
+<div id="navbar"  class ="header bg-white border-bottom fixed-top" style="height:5rem;">
   <div class=" " style="margin-left:5%; margin-right:5%; width:90%;">
       <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="/html/anasayfa.html">
@@ -92,7 +114,7 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="/html/eminlersigorta.html">Hakkımızda</a>
                     <a class="dropdown-item" href="/html/nasilcalisir.html">Nasıl Çalışır ?</a>
-                    <a class="dropdown-item" href="/html/anlasmalisirketler.html">Anlaşmalı Sigorta Şirketleri</a>
+                    <a class="dropdown-item" href="#anlasmalisirketler" onclick="goToSection('anlasmalisirketler')">Anlaşmalı Sigorta Şirketleri</a>
                   
 
                     <!-- <div class="dropdown-divider"></div>
@@ -160,64 +182,59 @@
 </div>
 <!-- NAVBAR END -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
-
-<div class="sub-nav container">
+<!-- KVK START -->       
+<div class="sub-nav container border-bottom">
     <div class="row pt-4 mx-auto d-flex justify-content-between" style="margin-top: 5rem;">
-        <h1 class="text-default-bold">Kullanıcı Girişi</h1>
+        <h1 class="text-default-bold">Gizlilik Politikası ve Kullanıcı Sözleşmesi</h1>
           
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="/html/anasayfa.html">Anasayfa</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Giriş Yap</a></li>
+              <li class="breadcrumb-item active d-flex-reverse" aria-current="page">Gizlilik Politikası ve Kullanıcı Sözleşmesi</a></li>
             </ol>
           </nav>
 
     </div>
 
-</div>
+    <div class="container mt-4 " style="margin-bottom: 13rem;">
+        <div class="row">
+                <p><strong>Kişisel Verilerin Korunması Hakkında Bilgilendirme ve Açık Rıza Beyanı</strong></p>
+                <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca, <strong>eminlersigorta.com.tr&nbsp;</strong>&nbsp;olarak, kişisel verileriniz aşağıda açıklandığı çerçevede; hukuka ve dürüstlük kurallarına uygun bir şekilde kaydedilecek, saklanacak, güncellenecek, mevzuatın izin verdiği durumlarda ve/veya işlendikleri amaç için geçerli olan durumlarda 3. kişilere açıklanabilecek/ devredilebilecek, sınıflandırılabilecek ve KVKK’da sayılan şekillerde işlenebilecektir.</p>
+                <p><strong>Kişisel verilerinizi neden işliyoruz ve bunun hukuki gerekçesi nedir?</strong><br>
+                Sigortacılık mevzuatı ve diğer sair mevzuat kapsamında Acentesi olduğumuz Sigorta Şirketlerimiz aracılığıyla veya doğrudan vermekte olduğumuz hizmetler, ilgili kişilere ait, kişisel ve/veya özel nitelikli kişisel verilerin işlenmesini gerektirmektedir. Bu kapsamda mezkûr kişisel veriler KVKK çerçevesinde işlenmektedir.</p>
+                <p><strong>Kişisel verilerinizi kimlere ve hangi amaçla aktarıyoruz?</strong><br>
+                Sigortacılık Kanunu ve diğer mevzuat hükümleri çerçevesinde kişisel verileriniz, ilgili kişi ve/veya kurumlara aktarılabilmekte olup ayrıca bu veriler anonim hale getirildikten sonra sigortacılık hizmetlerimiz için istatistiksel analizler yapılmak üzere <strong>eminlersigorta.com.tr</strong> içerisinde yer alan merkezlere ve iştiraklerimize ile Acentesi olduğumuz Sigorta Şirketlerine aktarılabilmektedir.</p>
+                <p><strong>Kişisel verilerinizi nasıl topluyoruz?</strong><br>
+                Sigorta sözleşmelerinin taraflarına ait kişisel/özel nitelikli kişisel veriler; personelimiz, internet uygulamalarımız ve çağrı merkezimiz ile Acentesi olduğumuz sigorta Şirketi tarafından siz müşterilerimizin tercihlerine göre açık rızalarınızı sözlü, yazılı veya elektronik ortamda toplayabileceklerdir.</p>
+                <p><strong>Kişisel verisi işlenen sizlerin,”ilgili kişi” olarak haklarınız nelerdir?</strong><br>
+                6698 sayılı Kişisel Verilerin Korunması Kanunu’nun 11.maddesi uyarınca bize başvurarak kişisel verilerinizin;<br>
+                • işlenip işlenmediğini öğrenme,<br>
+                • işlenmişse bilgi talep etme,<br>
+                • işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,<br>
+                • yurt içinde/ yurt dışında aktarıldığı 3. kişileri bilme,<br>
+                • eksik/ yanlış işlenmişse düzeltilmesini isteme, KVKK’nın 7. maddesinde öngörülen şartlar çerçevesinde silinmesini/ yok edilmesini isteme*,<br>
+                • aktarıldığı 3. kişilere yukarıda sayılan (d) ve (e) bentleri uyarınca yapılan işlemlerin bildirilmesini isteme,<br>
+                • münhasıran otomatik sistemler ile analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,<br>
+                • kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme hakkına sahipsiniz.<br>
+                Söz konusu haklar, kanunun”yürürlük” başlıklı 32.maddesi uyarınca 07.10.2016 tarihi itibarıyla yürürlüğe girecektir.<br>
+                (*) Sizlerle gerçekleştirmekte olduğumuz işlemlere ilişkin dokümanların saklanmasına dair gerek Sigortacılık Kanunu gerekse de diğer ilgili mevzuat kapsamında yasal zorunluluklarımız bulunmaktadır.<br>
+                Kişisel verilerinizin silinmesini veya yok edilmesini talep etmeniz halinde, yasal zorunluluklar kapsamında belirlenen sürenin sonunda bu talebinizi yerine getirmemiz mümkün olabilecektir.</p>
+                <p><strong>İnternet sitesinde vermiş olduğum bilgiler de 6698 sayılı Kanun kapsamında işleniyor mu?</strong><br>
+                Bu web sitesini ziyaret etmekle ve bu site vasıtasıyla sunduğumuz hizmetlerden yararlanmayı talep etmekle, bu web sitesi aracılığı ile ilettiğiniz kişisel bilgilerinizin, KVKK uyarınca”açık rıza” ile verildiği kabul edilmektedir.</p>
+                <p>Bu kapsamda tarafımıza iletmiş olduğunuz kişisel bilgilerin, ihtiyaçlarınız doğrultusunda size uygun ürün, uygulama, avantaj veya kampanyalardan yararlanabilmeniz, genel bilgilendirme yapılması ve tarafınızla her türlü iletişim sağlanması amacıyla işlenmesine ve bu doğrultuda kişisel bilgilerinizin, <strong>eminlersigorta.com.tr</strong> &nbsp;ve Kürşat&nbsp;<strong>eminlersigorta.com.tr</strong> Aracılık Hizmetleri ile acentesi olduğumuz Sigorta Şirketleri tarafından, doğrudan ya da SMS, resim, animasyon, kısa mesaj, multimedya nesneleri içeren MMS, telefon, faks, otomatik arama makineleri, elektronik posta ve benzeri iletişim kanallarından iletilecek veri, ses ve görüntü içerikli bilgilendirme, tanıtım ve pazarlama iletilerinin tarafınıza gönderilmesini, dilediğiniz zaman tamamen veya ürün ve kanal bazında, veri, ses, görüntü ve sair her türlü ileti gönderimini reddetme hakkını haiz olduğunuzu bildiğinizi kabul ve beyan etmektesiniz.</p>
+                <p>Konuyla ilgili olarak veya kişisel verileriniz hakkında daha fazla bilgi almak isterseniz, Şirket’imizin Genel Müdürlük adresine veya <strong>info@eminlersigorta.com.tr</strong> elektronik posta adresine yazılı olarak başvurabilirsiniz.</p>
+         
 
-<div class="container pt-5 mb-5 mx-auto" style="width:25%">
-    <div class="row d-flex flex-row justify-content-center">
-        <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email </label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">Lütfen kayıtlı email adresinizi giriniz.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Şifre</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck1">
-                  <label class="form-check-label" for="gridCheck">
-                      Eminlersigorta.com.tr tarafından sunulan ürün ve hizmetlere ilişkin kampanya ve duyuruların; e-posta, sms ve çağrı merkezi aracılığı ile tarafıma iletilmesini kabul ediyorum.
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck2">
-                  <label class="form-check-label" for="gridCheck">
-                    <a class="text-grey-bold text-decoration-none" href="/html/gizlilikpolitikasi.html">Gizlilik Politikası ve Kullanıcı Sözleşmesini</a>, <a class="text-grey-bold text-decoration-none" href="/html/KVKAydinlatmaMetni.html">KVK Aydınlatma Metni’</a>ni okudum ve onaylıyorum.Açık Rıza Metni kapsamında kişisel verilerimin işlenmesine rıza gösteriyorum.
-                </label>
-                </div>
-              </div>
-            <button type="submit" class="btn btn-orange">Submit</button>
-          </form>
+
+
+        </div>
 
     </div>
-</div>
 
-
-
-
-
-
-
+<!-- KVK END-->
 <!-- ------------------------------------------------------------------------------------------------------------------- --> 
-
 <!-- FOOTER START --> 
-<footer class ="fixed-bottom footer bg-white border-bottom border-top mb-0">
+<footer class ="fixed-bottom footer bg-white border-bottom border-top " style="margin-bottom: 0;" >
 
   <nav class="navbar navbar-expand-lg navbar-light d-flex-reverse justify-content-between align-items-end" style="margin-left:5%; margin-right:5%; width:90%;">
       <div class="row d-flex align-items-center py-1" style="width:25%">
@@ -255,7 +272,6 @@
   </nav>
 
 </footer>
-
 <!-- FOOTER END -->         
 
 

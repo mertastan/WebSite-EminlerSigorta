@@ -63,12 +63,34 @@
 
     <title>Kasko - Trafik Sigortası Karşılaştır, Satın Al | EminlerSigorta</title>
 
+    <script>
+      var scrolling = false; // Kaydırma işlemi devam ediyor mu?
+    
+      function goToSection(sectionId) {
+        if (!scrolling) {
+          scrolling = true; // Kaydırma işlemi başladı
+          var section = document.getElementById(sectionId);
+          var navbarHeight = document.getElementById('navbar').offsetHeight;
+          var sectionTop = section.offsetTop - navbarHeight;
+          window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+    
+          // Kaydırma işlemi tamamlandığında scrolling değişkenini false olarak ayarlayın
+          setTimeout(function() {
+            scrolling = false;
+          }, 1000); // Uygun bir zaman aşım süresi belirleyebilirsiniz
+        }
+      }
+    </script>
+
+
+
   </head>
   <body>
 
+
 <!-- ------------------------------------------------------------------------------------------------------------------- -->  
 <!-- NAVBAR START -->
-<div class ="bg-white border-bottom fixed-top" style="height:5rem;">
+<div id="navbar"  class ="header bg-white border-bottom fixed-top" style="height:5rem;">
   <div class=" " style="margin-left:5%; margin-right:5%; width:90%;">
       <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="/html/anasayfa.html">
@@ -92,7 +114,7 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="/html/eminlersigorta.html">Hakkımızda</a>
                     <a class="dropdown-item" href="/html/nasilcalisir.html">Nasıl Çalışır ?</a>
-                    <a class="dropdown-item" href="/html/anlasmalisirketler.html">Anlaşmalı Sigorta Şirketleri</a>
+                    <a class="dropdown-item" href="#anlasmalisirketler" onclick="goToSection('anlasmalisirketler')">Anlaşmalı Sigorta Şirketleri</a>
                   
 
                     <!-- <div class="dropdown-divider"></div>
@@ -161,7 +183,7 @@
 <!-- NAVBAR END -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <!-- MAINNAV START -->       
-        <div class="py-4" style="margin-top: 6rem;">
+        <div class="section py-4" style="margin-top: 6rem;">
           <div class="container">
               <div class="row d-flex justify-content-center align-items-center" >
       
@@ -190,7 +212,7 @@
 <!-- CAROUSEL END --> 
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <!-- BUTTONLAR START -->
-         <div class="container mb-5">
+         <div class="section container mb-5">
            <div class="row p-3 d-flex justify-content-center align-items-center">
             <div class="col-md-4 col-sm-8 insurance-div">
               <a href="/html/kasko.html" class="btn btn-large insurance-a" title="Kasko">
@@ -241,7 +263,7 @@
 <!-- BUTTONLAR -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <!-- NASIL CALISIR START -->
-              <div class="bg-white border-top border-bottom pt-4 mb-4" >
+              <div class="section bg-white border-top border-bottom pt-4 mb-4" >
                 <div class="container">
                   <div class="row">
                     <h1 class="text-default-bold mx-auto mb-0">
@@ -284,7 +306,7 @@
 <!-- NASIL CALISIR END -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->        
 <!-- CAROUSEL START -->
-            <div class="border-bottom mb-4" style="width:80%; margin: 0 auto;">
+            <div class="section border-bottom mb-4" style="width:80%; margin: 0 auto;">
               <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -325,7 +347,7 @@
 <!-- NASIL CALISIR END -->
 <!-- ------------------------------------------------------------------------------------------------------------------- -->        
 <!-- ANLAŞMALI SİGORTA ŞİRKETLERİ START -->
-<div class="border-top bg-white border-bottom"> 
+<div id="anlasmalisirketler" class="section border-top bg-white border-bottom"  style="margin-top:6rem;"> 
   <div class="anlasmalikurumlar container mt-5">
   <div class="anlasmalisirketler-main row d-flex justify-content-between align-items-center text-center mx-auto" >
     <div class="row d-flex justify-content-between align-items-center text-center mx-auto">
@@ -355,7 +377,7 @@
 <!-- ANLAŞMALI SİGORTA ŞİRKETLERİ END -->
 <!-- ------------------------------------------------------------------------------------------------------------------- --> 
 <!-- İŞLEMLER START-->
-<div class="container-islemler mt-5 pt-4" style="margin-bottom: 10rem;">
+<div class="section container-islemler mt-5 pt-4" style="margin-bottom: 10rem;">
   <div class="container ">
     <div class="row">
       <div class="col-3 sub-footer-alt">
